@@ -40,7 +40,7 @@ const Header = () => {
       className={classnames(styles.mainHeader, { [styles.solid]: currentPath })}
     >
       <div
-        onClick={() => router.push("/dashboard", { scroll: false })}
+        onClick={() => router.push("/", { scroll: false })}
         className={styles.mainLogo}
       >
         <Image priority={true} src={logo} alt="Main" />
