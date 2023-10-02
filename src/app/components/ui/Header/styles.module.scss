@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   z-index: 1111100;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   &.solid {
     position: static;
@@ -34,7 +33,6 @@
   h2 {
     color: $text-color;
     margin: 0 10px;
-    font-family: "Caprasimo", cursive;
   }
 }
 

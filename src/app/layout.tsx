@@ -1,11 +1,11 @@
 import "./globals.scss";
+
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import { montserrat } from "./fonts";
 
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Windows4U",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />

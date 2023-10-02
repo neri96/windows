@@ -1,9 +1,13 @@
 import { useCallback } from "react";
 import { motion } from "framer-motion";
 
+import classnames from "classnames";
+
 import Link from "next/link";
 
-import Button from "../../../ui/Button";
+import Button from "@/app/components/ui/Button";
+
+import { caprasimo } from "@/app/fonts";
 
 import styles from "./Intro.module.scss";
 
@@ -19,7 +23,7 @@ const Intro = () => {
   );
 
   return (
-    <div className={styles.intro}>
+    <div className={classnames(styles.intro, caprasimo.className)}>
       <div className={styles.intro__text}>
         <motion.h1
           className={styles.intro__title}
