@@ -12,7 +12,7 @@ import styles from "./styles.module.scss";
 
 import { matData } from "../constants";
 
-import ZoomIcon from "@/app/assets/images/icons/zoom.svg";
+import ZoomIcon from "@/app/assets/images/icons/search-svgrepo-com.svg";
 
 const initalState = {
   title: "",
