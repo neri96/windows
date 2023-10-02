@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { AnimatePresence, motion } from "framer-motion";
 
 import Link from "next/link";
 import Image from "next/image";
+
+import classnames from "classnames";
 
 import HamburgerMenu from "../HamburgerMenu";
 
@@ -16,25 +18,13 @@ import styles from "./styles.module.scss";
 
 import { navigationList } from "@/app/globalConst";
 
-const navList = () => {
-  return (
-    <ul className={styles.navList}>
-      {navigationList.map(({ id, page }: { id: string; page: string }) => {
-        return (
-          <li key={id}>
-            <Link href={`/${page.replace(/\s+/g, "")}`}>{page || "home"}</Link>
-          </li>
-        );
-      })}
-    </ul>
-  );
-};
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const pathname = usePathname();
   const currentPath = pathname.replace(/^\/|\/$/g, "");
+
+  const router = useRouter();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -46,12 +36,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${styles.mainHeader} ${currentPath && styles.solid}`}>
-      <Link href="/">
-        <div className={styles.mainLogo}>
-          <Image priority={true} src={logo} alt="Picture of the author" />
-        </div>
-      </Link>
+    <header
+      className={classnames(styles.mainHeader, { [styles.solid]: currentPath })}
+    >
+      <div
+        onClick={() => router.push("/dashboard", { scroll: false })}
+        className={styles.mainLogo}
+      >
+        <Image priority={true} src={logo} alt="Main" />
+      </div>
       <div className={styles.mainHeader__navIcon}>
         <HamburgerMenu
           isOpen={isMenuOpen}
