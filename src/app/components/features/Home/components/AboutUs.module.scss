@@ -1,0 +1,18 @@
+@import "../../../../sass/variables.scss";
+
+.aboutUs {
+  position: relative;
+}
+
+.aboutUs__descr {
+  font-family: "Caprasimo", cursive;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+  color: $text-color;
+  line-height: 25px;
+  h3 {
+    margin: 0;
+  }
+}

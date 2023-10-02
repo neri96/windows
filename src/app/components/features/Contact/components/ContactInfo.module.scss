@@ -1,0 +1,108 @@
+@import "../../../../sass/variables.scss";
+
+.contactInfo {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  h2 {
+    margin: 0;
+  }
+}
+
+.contactInfo__wrap {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.contactInfo__title {
+  margin-bottom: 20px;
+}
+
+.contactInfo__section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  h4 {
+    margin-left: 5px;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.contactInfo__icon {
+  height: 50px;
+  min-width: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.contactInfo__contact {
+  height: 50px;
+  width: 65%;
+  background-color: #333;
+  border-radius: 5px;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  a {
+    color: $text-color;
+  }
+}
+
+.contactInfo__footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  h2 {
+    margin-left: 10px;
+  }
+  img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+// MEDIA //
+
+@media screen and (max-width: 1500px) {
+  .contactInfo__contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contactInfo__wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contactInfo__wrap {
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .contactInfo__footer {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.ourWorkGallery__pagination {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  box-sizing: border-box;
+  &__content {
+    overflow: hidden;
+  }
+  &__wrap {
+    height: 100%;
+    // width: 100%;
+    transition: 300ms ease;
+    display: flex;
+    transition: 300ms ease;
+  }
+  img {
+    height: 100%;
+    min-width: 80px;
+    margin: 0 2.5px;
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+    &.ourWorkGallery__pagination__currentImg {
+      filter: brightness(30%);
+    }
+  }
+}

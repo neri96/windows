@@ -1,0 +1,32 @@
+@import "../../../sass/variables.scss";
+
+.input {
+  width: 100%;
+  label {
+    display: block;
+    color: $text-color;
+    font-weight: 800;
+  }
+  input,
+  textarea {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    padding-left: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #333;
+  }
+  input {
+    height: 25px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    height: 100px;
+    padding: 5px;
+    resize: none;
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../../sass/variables.scss";
+
+.select {
+  width: 100%;
+  position: relative;
+}
+
+.select__open {
+  .select__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.select__label {
+  display: block;
+  color: $text-color;
+  font-weight: 800;
+}
+
+.select__chosenOption {
+  color: #333;
+}
+
+.select__field {
+  height: 30px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  span {
+    font-size: 14px;
+  }
+}
+
+.select__icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5px;
+  transition: 300ms ease;
+  img {
+    height: 60%;
+    width: 25px;
+    margin-right: 0;
+  }
+}
+
+.select__options {
+  color: $text-color;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: rgba($color: #333333, $alpha: 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  li {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 300ms ease;
+    &:hover {
+      padding-left: 15px;
+    }
+  }
+}

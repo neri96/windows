@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+div,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+input,
+textarea,
+button,
+label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}

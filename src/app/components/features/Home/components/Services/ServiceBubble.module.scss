@@ -1,0 +1,54 @@
+.services__option {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.services__bubble {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 300ms ease;
+  &.chosen {
+    box-shadow: rgba(0, 255, 0, 0.1) 0px 4px 16px,
+      rgba(0, 255, 0, 0.1) 0px 8px 24px, rgba(0, 255, 0, 0.1) 0px 16px 56px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  span {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// MEDIA //
+
+@media screen and (max-width: 785px) {
+  .services__bubble {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .services__bubble {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .services__bubble {
+    height: 170px;
+    width: 170px;
+  }
+}

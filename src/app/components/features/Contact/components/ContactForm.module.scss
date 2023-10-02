@@ -1,0 +1,51 @@
+@import "../../../../sass/variables.scss";
+
+.contactForm {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  form {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    input {
+      height: 30px;
+    }
+  }
+}
+
+.contactForm__contactUs {
+  height: 50px;
+  width: 100%;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  border-radius: 5px;
+}
+
+.contactForm__wrap {
+  width: 100%;
+}
+
+.contactForm__button {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+// MEDIA //
+
+@media screen and (max-width: 1500px) {
+  .contactForm {
+    form {
+      width: 100%;
+    }
+  }
+}

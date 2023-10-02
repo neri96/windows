@@ -1,0 +1,16 @@
+.ourWorkGallery {
+  min-height: calc(100vh - 180px);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.ourWorkGallery__content {
+  column-count: 3;
+  column-gap: 3px;
+  img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

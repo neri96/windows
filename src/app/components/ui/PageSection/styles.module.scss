@@ -1,0 +1,33 @@
+@import "../../../sass/variables.scss";
+
+.pageSection {
+  box-sizing: border-box;
+  position: relative;
+  header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin: 0;
+      position: relative;
+      color: $text-color;
+    }
+  }
+}
+
+.pageSection__body {
+  height: calc(100% - 70px);
+}
+
+.underline {
+  height: 3px;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 5px;
+  width: 0;
+  transition: 300ms ease;
+}
