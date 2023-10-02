@@ -58,7 +58,11 @@ const Select = ({
             className={styles.select__options}
           >
             {list.map((option: string) => {
-              return <li onClick={() => handleOption(option)}>{option}</li>;
+              return (
+                <li key={option} onClick={() => handleOption(option)}>
+                  {option}
+                </li>
+              );
             })}
           </motion.ul>
         )}
