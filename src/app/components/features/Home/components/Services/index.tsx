@@ -32,18 +32,19 @@ const addedStyles = {
 };
 
 const windowInstallationTypes = [
-  { id: uuid(), service: "new construction windows" },
-  { id: uuid(), service: "retrofit" },
   { id: uuid(), service: "bay windows" },
-  { id: uuid(), service: "sliding windows" },
+  { id: uuid(), service: "garden windows" },
+  { id: uuid(), service: "single hung windows" },
+  { id: uuid(), service: "double hung windows" },
+  { id: uuid(), service: "casement windows" },
+  { id: uuid(), service: "awning windows" },
+  { id: uuid(), service: "slider windows" },
+  { id: uuid(), service: "picture windows" },
 ];
 
 const doorInstallationTypes = [
-  { id: uuid(), service: "new construction doors" },
   { id: uuid(), service: "patio doors" },
   { id: uuid(), service: "entry doors" },
-  { id: uuid(), service: "glass doors" },
-  { id: uuid(), service: "sliding doors" },
 ];
 
 const Services = () => {
@@ -114,7 +115,7 @@ const Services = () => {
             handleClick={() => handleOptions(ServiceOption.Door)}
           >
             <Image priority={true} src={DoorImg} alt="Door Service" />
-            <span>Door</span>
+            <span>Doors</span>
           </ServiceBubble>
         </div>
       </div>
