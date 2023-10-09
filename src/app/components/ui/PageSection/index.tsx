@@ -1,21 +1,17 @@
-import { forwardRef } from "react";
+import { ReactNode, forwardRef, ForwardRefRenderFunction } from "react";
 
 import { motion } from "framer-motion";
 
 import styles from "./styles.module.scss";
 
-const PageSection = (
+const PageSection: ForwardRefRenderFunction<
+  HTMLElement,
   {
-    title,
-    style,
-    children,
-  }: {
     title: string;
-    style?: any;
-    children: any;
-  },
-  ref: any
-) => {
+    style?: { [key: string]: string };
+    children: ReactNode;
+  }
+> = ({ title, style, children }, ref) => {
   return (
     <section ref={ref} className={styles.pageSection} style={style}>
       <header>

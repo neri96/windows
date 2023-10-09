@@ -1,8 +1,8 @@
 import isEmpty from "lodash.isempty";
 
-const useValidation = (requiredFields: any) => {
-  const validate = (value: any) => {
-    const errorTemp: any = {};
+const useValidation = (requiredFields: string[]) => {
+  const validate = (value: { [key: string]: string }) => {
+    const errorTemp: { [key: string]: string } = {};
 
     Object.keys(value).forEach((key) => {
       if (key === "name") {

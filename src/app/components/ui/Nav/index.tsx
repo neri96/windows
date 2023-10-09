@@ -4,7 +4,11 @@ import styles from "./styles.module.scss";
 
 import { navigationList } from "@/app/globalConst";
 
-const Nav = ({ additionalStyles }: { additionalStyles?: any }) => {
+const Nav = ({
+  additionalStyles,
+}: {
+  additionalStyles?: { [key: string]: string };
+}) => {
   return (
     <nav style={additionalStyles || undefined} className={styles.nav}>
       <ul className={styles.navList}>

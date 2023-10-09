@@ -1,8 +1,9 @@
-import { v4 as uuid } from "uuid";
+import { Dispatch, SetStateAction } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 import OurWorkPagination from "./OurWorkPagination";
 
 import { images } from "../images";
@@ -21,9 +22,9 @@ const OurWorkCarousel = ({
   setCarouselOpen,
 }: {
   index: number;
-  setIndex: any;
+  setIndex: Dispatch<SetStateAction<number>>;
+  setCarouselOpen: Dispatch<SetStateAction<boolean>>;
   carouselOpen: boolean;
-  setCarouselOpen: any;
 }) => {
   const handleIndexMinus = () => {
     if (index === 0) return;
@@ -50,7 +51,7 @@ const OurWorkCarousel = ({
           <div className={styles.ourWorkGallery__carousel}>
             <div
               className={styles.ourWorkGallery__close}
-              onClick={() => setCarouselOpen()}
+              onClick={() => setCarouselOpen(false)}
             >
               <Image priority={true} src={CloseIcon} alt="Close" />
             </div>
@@ -77,22 +78,32 @@ const OurWorkCarousel = ({
                 transform: `translateX(-${(100 / images.length) * index}%)`,
               }}
             >
-              {images.map(({ id, title, img }: any) => {
-                return (
-                  <div
-                    key={id}
-                    className={styles.ourWorkGallery__carousel__imgWrap}
-                  >
-                    <h2>{title}</h2>
-                    <Image
-                      className={styles.ourWorkGallery__carousel__img}
-                      priority={true}
-                      src={img}
-                      alt={title}
-                    />
-                  </div>
-                );
-              })}
+              {images.map(
+                ({
+                  id,
+                  title,
+                  img,
+                }: {
+                  id: string;
+                  title: string;
+                  img: StaticImageData;
+                }) => {
+                  return (
+                    <div
+                      key={id}
+                      className={styles.ourWorkGallery__carousel__imgWrap}
+                    >
+                      <h2>{title}</h2>
+                      <Image
+                        className={styles.ourWorkGallery__carousel__img}
+                        priority={true}
+                        src={img}
+                        alt={title}
+                      />
+                    </div>
+                  );
+                }
+              )}
             </div>
             <OurWorkPagination currentIndex={index} setIndex={setIndex} />
           </div>

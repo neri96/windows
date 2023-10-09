@@ -1,3 +1,5 @@
+import { ChangeEvent, FocusEvent } from "react";
+
 import styles from "./styles.module.scss";
 
 const Input = ({
@@ -14,12 +16,14 @@ const Input = ({
   label: string;
   name: string;
   value: string;
-  style?: any;
-  error?: any;
+  style?: { [key: string]: string };
+  error?: string;
   isTextarea?: boolean;
   placeholder?: string;
-  handleChange: (e: any) => void;
-  handleFocus: (e: any) => void;
+  handleChange: (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  handleFocus: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }) => {
   const Component = isTextarea ? "textarea" : "input";
 

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 import { motion } from "framer-motion";
 
 import Button from "../Button";
@@ -12,8 +14,8 @@ const Modal = ({
 }: {
   closeModal: () => void;
   btnTitle?: string;
-  children: any;
-  additionalStyles?: any;
+  children: ReactNode;
+  additionalStyles?: { [key: string]: string };
   progressBar?: boolean;
 }) => {
   return (

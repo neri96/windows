@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, ChangeEvent, FocusEvent, FormEvent } from "react";
 
 import emailjs from "@emailjs/browser";
 
@@ -31,7 +31,7 @@ const initialState = {
 };
 
 const ContactForm = () => {
-  const formRef = useRef<any>();
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   const [value, setValue] = useState<IState>(initialState);
   const [error, setError] = useState<IState>(initialState);
@@ -40,12 +40,14 @@ const ContactForm = () => {
 
   const { validate } = useValidation(["name", "email", "phone"]);
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const name = e.target.name;
     const curentValue = e.target.value;
 
     if (
-      (name === "phone" && isNaN(curentValue)) ||
+      (name === "phone" && isNaN(+curentValue)) ||
       (name === "name" && !/(^$)|(^[A-Za-z]+$)/.test(curentValue))
     ) {
       return null;
@@ -53,7 +55,9 @@ const ContactForm = () => {
     setValue({ ...value, [name]: curentValue });
   };
 
-  const handleFocus = (e: any) => {
+  const handleFocus = (
+    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const name = e.target.name;
 
     if (error[name as keyof IState]) {
@@ -61,7 +65,7 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validate(value);
@@ -74,7 +78,7 @@ const ContactForm = () => {
       .sendForm(
         "service_abxijvg",
         "template_w0pvsql",
-        formRef.current,
+        formRef.current as HTMLFormElement,
         "uPA15oGxCORm0aUOw"
       )
       .then((result) => {

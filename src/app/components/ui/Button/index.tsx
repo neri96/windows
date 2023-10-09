@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 import styles from "./styles.module.scss";
 
 interface Props {
-  children: any;
+  children: ReactNode;
   isSubmitBtn?: boolean;
   handleClick?: () => void;
 }

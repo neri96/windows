@@ -48,7 +48,7 @@ const doorInstallationTypes = [
 ];
 
 const Services = () => {
-  const sectionRef = useRef<null | HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const scrollToSection = () => {
     setTimeout(() => {

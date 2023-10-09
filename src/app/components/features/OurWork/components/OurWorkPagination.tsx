@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 import { v4 as uuid } from "uuid";
 import classnames from "classnames";
@@ -9,21 +9,37 @@ import { images } from "../images";
 
 import styles from "./OurWorkPagination.module.scss";
 
-const OurWorkPagination = ({ currentIndex, setIndex }: any) => {
+const OurWorkPagination = ({
+  currentIndex,
+  setIndex,
+}: {
+  currentIndex: number;
+  setIndex: Dispatch<SetStateAction<number>>;
+}) => {
   const [imgPerPage, setImgPerPage] = useState<number>(7);
 
   useEffect(() => {
-    function handleResize() {
+    const displayMobile = () => {
       if (window.innerWidth < 600) {
         setImgPerPage(4);
       }
-    }
+    };
+
+    displayMobile();
+
+    // !!! In case browser window is resized after app is rendered
+
+    const handleResize = () => {
+      displayMobile();
+    };
 
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+
+    // !!!
   }, []);
 
   return (

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import Modal from "@/app/components/ui/Modal";
 import Button from "@/app/components/ui/Button";
@@ -40,26 +40,38 @@ export const MaterialsContainer = () => {
     <>
       <div className={styles.materials}>
         <div className={styles.materials__options}>
-          {matData.map(({ id, img, title, description }: any) => {
-            return (
-              <div key={id} className={styles.material__option}>
-                <div className={styles.material__img}>
-                  <Image priority={true} src={img} alt={title} />
+          {matData.map(
+            ({
+              id,
+              img,
+              title,
+              description,
+            }: {
+              id: string;
+              img: StaticImageData;
+              title: string;
+              description: string;
+            }) => {
+              return (
+                <div key={id} className={styles.material__option}>
+                  <div className={styles.material__img}>
+                    <Image priority={true} src={img} alt={title} />
+                  </div>
+                  <div className={styles.material__title}>
+                    <h3>{title}</h3>
+                  </div>
+                  <div className={styles.material__descr}>
+                    <p>{description}</p>
+                  </div>
+                  <div className={styles.material__more}>
+                    <Button handleClick={() => openModal(title, description)}>
+                      <Image priority={true} src={ZoomIcon} alt={"Read more"} />
+                    </Button>
+                  </div>
                 </div>
-                <div className={styles.material__title}>
-                  <h3>{title}</h3>
-                </div>
-                <div className={styles.material__descr}>
-                  <p>{description}</p>
-                </div>
-                <div className={styles.material__more}>
-                  <Button handleClick={() => openModal(title, description)}>
-                    <Image priority={true} src={ZoomIcon} alt={"Read more"} />
-                  </Button>
-                </div>
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </div>
       </div>
       <AnimatePresence>
