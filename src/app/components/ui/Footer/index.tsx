@@ -53,15 +53,21 @@ const Footer = () => {
           styles.mainFooterSocial
         )}
       >
-        <a href="https://www.facebook.com/profile.php?id=61550266862780">
-          <Image priority={true} src={FbIcon} alt={`Facebook`} />
-        </a>
+        <div className={styles.mainFooterIcon}>
+          <a href="https://www.facebook.com/profile.php?id=61550266862780">
+            <span>Facebook</span>
+            <Image priority={true} src={FbIcon} alt={`Facebook`} />
+          </a>
+        </div>
         {/* <a href="https://www.instagram.com">
           <Image priority={true} src={IgIcon} alt={`Instagram`} />
         </a> */}
-        <a href="https://www.yelp.com/biz/windows4u-concord-2">
-          <Image priority={true} src={YelpIcon} alt={`Yelp`} />
-        </a>
+        <div className={styles.mainFooterIcon}>
+          <span>Yelp</span>
+          <a href="https://www.yelp.com/biz/windows4u-concord-2">
+            <Image priority={true} src={YelpIcon} alt={`Yelp`} />
+          </a>
+        </div>
       </div>
     </footer>
   );
