@@ -10,7 +10,7 @@ import styles from "./ServiceBubble.module.scss";
 const bubbleVariants = {
   hidden: {
     scale: 0.8,
-    filter: "brightness(30%)",
+    filter: "brightness(50%)",
   },
   visible: {
     scale: 1,
