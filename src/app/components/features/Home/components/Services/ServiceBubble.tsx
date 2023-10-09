@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 
+import ServiceArrows from "./ServiceArrows";
+
 import classnames from "classnames";
 
 import styles from "./ServiceBubble.module.scss";
@@ -40,13 +42,25 @@ const ServiceBubble = ({
       className={styles.services__option}
       onClick={handleClick}
     >
-      <div
-        className={classnames(styles.services__bubble, {
-          [styles.chosen]: isCurrentOption,
-        })}
-      >
-        {children}
-      </div>
+      {isCurrentOption ? (
+        <div
+          className={classnames(styles.services__bubble, {
+            [styles.chosen]: isCurrentOption,
+          })}
+        >
+          {children}
+        </div>
+      ) : (
+        <ServiceArrows>
+          <div
+            className={classnames(styles.services__bubble, {
+              [styles.chosen]: isCurrentOption,
+            })}
+          >
+            {children}
+          </div>
+        </ServiceArrows>
+      )}
     </motion.div>
   );
 };

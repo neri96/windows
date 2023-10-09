@@ -60,7 +60,7 @@
 
 // MEDIA //
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1111px) {
   .services__list {
     width: 50%;
     ul {
@@ -71,5 +71,26 @@
 
   .services__options {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .services__body {
+    flex-direction: column-reverse;
+  }
+
+  .services__options {
+    display: flex;
+    height: 500px;
+    width: 100%;
+  }
+
+  .services__list {
+    width: 100%;
+    align-items: flex-start;
+    li {
+      padding-left: 50px;
+      box-sizing: border-box;
+    }
   }
 }
