@@ -53,12 +53,13 @@ const Intro = () => {
           businesses all over East Bay
         </motion.h4>
         <motion.h3
+          className={styles.intro__number}
           initial="hidden"
           animate="visible"
           transition={getTransition(0.8)}
           variants={slideUpVariant}
         >
-          925-393-35-78
+          <a href="tel:9253933578">925-393-35-78</a>
         </motion.h3>
         <motion.div
           className={styles.intro__btn}

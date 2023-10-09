@@ -33,7 +33,9 @@ const initialState = {
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const [value, setValue] = useState<IState>(initialState);
+  const [value, setValue] = useState<IState | { [key: string]: string }>(
+    initialState
+  );
   const [error, setError] = useState<IState>(initialState);
 
   const [successModal, setSuccessModal] = useState<boolean>(false);
@@ -48,7 +50,7 @@ const ContactForm = () => {
 
     if (
       (name === "phone" && isNaN(+curentValue)) ||
-      (name === "name" && !/(^$)|(^[A-Za-z]+$)/.test(curentValue))
+      (name === "name" && !/(^$)|(^[  A-Za-z]+$)/.test(curentValue))
     ) {
       return null;
     }
@@ -68,7 +70,7 @@ const ContactForm = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    const validationErrors = validate(value);
+    const validationErrors = validate(value as { [key: string]: string });
 
     if (validationErrors) {
       return setError((err) => ({ ...err, ...validationErrors }));

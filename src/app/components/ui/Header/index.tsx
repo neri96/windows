@@ -33,7 +33,7 @@ const Header = () => {
         document.body.style.overflow = "scroll";
       };
     }
-  }, []);
+  }, [isMenuOpen]);
 
   return (
     <header
