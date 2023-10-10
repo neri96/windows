@@ -80,7 +80,6 @@ const ContactForm = () => {
     }
 
     const token = await refCaptcha.current.executeAsync();
-    console.log("tk", token);
 
     const params = {
       ...value,
@@ -103,8 +102,6 @@ const ContactForm = () => {
         }
       });
   };
-
-  console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID as string);
 
   return (
     <>
