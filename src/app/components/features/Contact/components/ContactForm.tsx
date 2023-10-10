@@ -70,7 +70,7 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validate(value as { [key: string]: string });
@@ -79,7 +79,7 @@ const ContactForm = () => {
       return setError((err) => ({ ...err, ...validationErrors }));
     }
 
-    const token = refCaptcha.current.executeAsync();
+    const token = await refCaptcha.current.executeAsync();
     console.log("tk", token);
 
     const params = {
