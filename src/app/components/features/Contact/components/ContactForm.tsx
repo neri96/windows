@@ -5,7 +5,7 @@ import { useState, useRef, ChangeEvent, FocusEvent, FormEvent } from "react";
 import { AnimatePresence } from "framer-motion";
 
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 import Input from "@/app/components/ui/Input";
 import Select from "@/app/components/ui/Select";
@@ -33,7 +33,7 @@ const initialState = {
 };
 
 const ContactForm = () => {
-  const refCaptcha = useRef<any>();
+  // const refCaptcha = useRef<any>();
   const formRef = useRef<HTMLFormElement | null>(null);
 
   const [value, setValue] = useState<IState | { [key: string]: string }>(
@@ -79,19 +79,19 @@ const ContactForm = () => {
       return setError((err) => ({ ...err, ...validationErrors }));
     }
 
-    const token = refCaptcha.current.getValue();
+    // const token = refCaptcha.current.getValue();
 
-    const params = {
-      ...value,
-      "g-recaptcha-response": token,
-    };
+    // const params = {
+    //   ...value,
+    //   "g-recaptcha-response": token,
+    // };
 
     emailjs
-      .send(
+      .sendForm(
         process.env.SERVICE_ID as string,
         process.env.TEMPLATE_ID as string,
-        params,
-        // formRef.current as HTMLFormElement,
+        // params,
+        formRef.current as HTMLFormElement,
         process.env.EMAILJS_KEY as string
       )
       .then((result) => {
@@ -167,10 +167,10 @@ const ContactForm = () => {
               <Button isSubmitBtn>Send</Button>
             </div>
 
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               ref={refCaptcha}
               sitekey={process.env.CAPTCHA_KEY as string}
-            />
+            /> */}
           </form>
         </div>
       </div>
