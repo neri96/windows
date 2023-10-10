@@ -12,10 +12,6 @@ const ContactInfo = () => {
   return (
     <div className={styles.contactInfo}>
       <div className={styles.contactInfo__wrap}>
-        {/* <div className={styles.contactInfo__title}>
-          <h2>Get ahold of us</h2>
-        </div> */}
-
         <div>
           <div className={styles.contactInfo__section}>
             <div className={styles.contactInfo__icon}>
