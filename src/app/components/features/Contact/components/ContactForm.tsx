@@ -80,6 +80,7 @@ const ContactForm = () => {
     }
 
     const token = refCaptcha.current.getValue();
+    console.log("tk", token);
 
     const params = {
       ...value,
