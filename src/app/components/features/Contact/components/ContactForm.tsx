@@ -103,6 +103,8 @@ const ContactForm = () => {
       });
   };
 
+  console.log(process.env.TEMPLATE_ID as string);
+
   return (
     <>
       <div className={styles.contactForm}>
