@@ -79,7 +79,7 @@ const ContactForm = () => {
       return setError((err) => ({ ...err, ...validationErrors }));
     }
 
-    const token = refCaptcha.current.getValue();
+    const token = refCaptcha.current.executeAsync();
     console.log("tk", token);
 
     const params = {
