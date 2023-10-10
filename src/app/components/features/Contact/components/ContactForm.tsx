@@ -171,6 +171,7 @@ const ContactForm = () => {
 
             <ReCAPTCHA
               ref={refCaptcha}
+              size="invisible"
               sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY as string}
             />
           </form>
