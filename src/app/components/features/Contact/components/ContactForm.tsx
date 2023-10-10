@@ -81,7 +81,6 @@ const ContactForm = () => {
     const token = refCaptcha.current.getValue();
 
     const params = {
-      // form: formRef.current as HTMLFormElement,
       ...value,
       "g-recaptcha-response": token,
     };
