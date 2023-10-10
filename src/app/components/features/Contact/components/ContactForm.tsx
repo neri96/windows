@@ -88,11 +88,11 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID as string,
-        process.env.TEMPLATE_ID as string,
+        process.env.NEXT_PUBLIC_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         // params,
         formRef.current as HTMLFormElement,
-        process.env.EMAILJS_KEY as string
+        process.env.NEXT_PUBLIC_EMAILJS_KEY as string
       )
       .then((result) => {
         if (result.status === 200) {
@@ -103,7 +103,7 @@ const ContactForm = () => {
       });
   };
 
-  console.log(process.env.TEMPLATE_ID as string);
+  console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID as string);
 
   return (
     <>
@@ -171,7 +171,7 @@ const ContactForm = () => {
 
             {/* <ReCAPTCHA
               ref={refCaptcha}
-              sitekey={process.env.CAPTCHA_KEY as string}
+              sitekey={process.env.NEXT_PUBLIC_CAPTCHA_KEY as string}
             /> */}
           </form>
         </div>
