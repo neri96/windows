@@ -2,6 +2,8 @@
 
 import { useState, useRef, ChangeEvent, FocusEvent, FormEvent } from "react";
 
+import { AnimatePresence } from "framer-motion";
+
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -13,7 +15,6 @@ import ContactSuccess from "./ContactSuccess";
 import useValidation from "@/app/hooks/useValidation";
 
 import styles from "./ContactForm.module.scss";
-import { AnimatePresence } from "framer-motion";
 
 interface IState {
   name: string;
