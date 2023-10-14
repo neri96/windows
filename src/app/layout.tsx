@@ -1,5 +1,7 @@
 import "./globals.scss";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import type { Metadata } from "next";
 
 import { montserrat } from "./fonts";
@@ -25,6 +27,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
