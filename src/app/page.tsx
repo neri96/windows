@@ -1,8 +1,15 @@
-"use client";
+import type { Metadata } from "next";
 
 import { HomeContainer } from "./components/features/Home";
 
 import styles from "./page.module.scss";
+
+export const metadata: Metadata = {
+  title: "Home",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const Home = () => {
   return (

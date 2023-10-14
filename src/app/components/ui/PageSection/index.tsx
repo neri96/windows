@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode, forwardRef, ForwardRefRenderFunction } from "react";
 
 import { motion } from "framer-motion";

@@ -8,8 +8,10 @@ import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 
 export const metadata: Metadata = {
-  title: "Windows4U",
-  description: "Vision Beyond Glass",
+  metadataBase: new URL("https://www.windows-4u.com/"),
+  title: "%s | Windows4U",
+  description:
+    "Retrofit and New Construction windows and doors installation, replacement and repair for  homeowners and businesses all over East Bay",
 };
 
 export default function RootLayout({

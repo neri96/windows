@@ -26,7 +26,9 @@ const ContactInfo = () => {
               <Image priority={true} src={EmailIcon} alt="Email" />
             </div>
             <div className={styles.contactInfo__contact}>
-              <h4>windows4ual@gmail.com</h4>
+              <h4>
+                <a href="mailto:windows4ual@gmail.com">windows4ual@gmail.com</a>
+              </h4>
             </div>
           </div>
           <div className={styles.contactInfo__section}>

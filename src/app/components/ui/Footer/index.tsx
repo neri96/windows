@@ -44,7 +44,7 @@ const Footer = () => {
         )}
       >
         <span>1130 Burnett Ave. # N Concord, CA 94520</span>
-        <span>windows4ual@gmail.com</span>
+        <a href="mailto:windows4ual@gmail.com">windows4ual@gmail.com</a>
         <a href="tel:9253933578">925-393-35-78</a>
       </div>
       <div
