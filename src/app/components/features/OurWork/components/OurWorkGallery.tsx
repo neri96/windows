@@ -24,7 +24,14 @@ export const OurWorkGallery = () => {
       />
       <div className={styles.ourWorkGallery__content}>
         {images.map(
-          ({ id, img }: { id: string; img: StaticImageData }, i: number) => {
+          (
+            {
+              id,
+              img,
+              title,
+            }: { id: string; img: StaticImageData; title: string },
+            i: number
+          ) => {
             return (
               <Image
                 key={id}
@@ -32,9 +39,9 @@ export const OurWorkGallery = () => {
                   setIndex(i);
                   setCarouselOpen(true);
                 }}
-                priority={true}
+                // placeholder="blur"
                 src={img}
-                alt="Picture of the author"
+                alt={title}
               />
             );
           }

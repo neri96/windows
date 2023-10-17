@@ -65,7 +65,7 @@ export const MaterialsContainer = () => {
                   </div>
                   <div className={styles.material__more}>
                     <Button handleClick={() => openModal(title, description)}>
-                      <Image priority={true} src={ZoomIcon} alt={"Read more"} />
+                      <Image src={ZoomIcon} alt={"Read more"} />
                     </Button>
                   </div>
                 </div>
