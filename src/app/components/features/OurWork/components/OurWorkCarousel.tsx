@@ -96,7 +96,6 @@ const OurWorkCarousel = ({
                       <h2>{title}</h2>
                       <Image
                         className={styles.ourWorkGallery__carousel__img}
-                        priority={true}
                         src={img}
                         alt={title}
                       />
