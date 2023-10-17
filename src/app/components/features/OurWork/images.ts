@@ -7,8 +7,8 @@ import img4 from "@/app/assets/images/gallery/img4.jpg";
 import img5 from "@/app/assets/images/gallery/img5.jpg";
 import img7 from "@/app/assets/images/gallery/img7.jpg";
 // import img9 from "@/app/assets/images/gallery/img9.JPG";
-// import img11 from "@/app/assets/images/gallery/img11.jpg";
-// import img13 from "@/app/assets/images/gallery/img13.jpg";
+import img11 from "@/app/assets/images/gallery/img11.jpg";
+import img13 from "@/app/assets/images/gallery/img13.jpg";
 // import img14 from "@/app/assets/images/gallery/img14.jpg";
 // import img15 from "@/app/assets/images/gallery/img15.jpg";
 
@@ -49,16 +49,16 @@ export const images = [
   //   title: "Door new construction installation, exterior finish redwood",
   //   img: img9,
   // },
-  // {
-  //   id: uuid(),
-  //   title: "Bay window",
-  //   img: img11,
-  // },
-  // {
-  //   id: uuid(),
-  //   title: "Bay window 2",
-  //   img: img13,
-  // },
+  {
+    id: uuid(),
+    title: "Bay window",
+    img: img11,
+  },
+  {
+    id: uuid(),
+    title: "Bay window 2",
+    img: img13,
+  },
   // {
   //   id: uuid(),
   //   title: "Fibreglass Milgard Ultra windows",
