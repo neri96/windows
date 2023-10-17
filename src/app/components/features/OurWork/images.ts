@@ -25,23 +25,23 @@ import img22 from "@/app/assets/images/gallery/img22.jpg";
 import img23 from "@/app/assets/images/gallery/img23.jpg";
 import img24 from "@/app/assets/images/gallery/img24.jpg";
 import img25 from "@/app/assets/images/gallery/img25.jpg";
-import img26 from "@/app/assets/images/gallery/img26.jpg";
-import img27 from "@/app/assets/images/gallery/img27.png";
-import img28 from "@/app/assets/images/gallery/img28.png";
-import img29 from "@/app/assets/images/gallery/img29.jpg";
-import img30 from "@/app/assets/images/gallery/img30.jpg";
-import img31 from "@/app/assets/images/gallery/img31.jpg";
+// import img26 from "@/app/assets/images/gallery/img26.jpg";
+// import img27 from "@/app/assets/images/gallery/img27.png";
+// import img28 from "@/app/assets/images/gallery/img28.png";
+// import img29 from "@/app/assets/images/gallery/img29.jpg";
+// import img30 from "@/app/assets/images/gallery/img30.jpg";
+// import img31 from "@/app/assets/images/gallery/img31.jpg";
 // import img32 from "@/app/assets/images/gallery/img32.jpg";
 // import img33 from "@/app/assets/images/gallery/img33.jpg";
-import img34 from "@/app/assets/images/gallery/img34.jpg";
-import img35 from "@/app/assets/images/gallery/img35.jpg";
-import img36 from "@/app/assets/images/gallery/img36.jpg";
-import img37 from "@/app/assets/images/gallery/img37.webp";
-import img38 from "@/app/assets/images/gallery/img38.jpg";
-import img39 from "@/app/assets/images/gallery/img39.webp";
-import img40 from "@/app/assets/images/gallery/img40.webp";
-import img41 from "@/app/assets/images/gallery/img41.jpg";
-import img42 from "@/app/assets/images/gallery/img42.jpg";
+// import img34 from "@/app/assets/images/gallery/img34.jpg";
+// import img35 from "@/app/assets/images/gallery/img35.jpg";
+// import img36 from "@/app/assets/images/gallery/img36.jpg";
+// import img37 from "@/app/assets/images/gallery/img37.webp";
+// import img38 from "@/app/assets/images/gallery/img38.jpg";
+// import img39 from "@/app/assets/images/gallery/img39.webp";
+// import img40 from "@/app/assets/images/gallery/img40.webp";
+// import img41 from "@/app/assets/images/gallery/img41.jpg";
+// import img42 from "@/app/assets/images/gallery/img42.jpg";
 
 export const images = [
   {
@@ -174,99 +174,99 @@ export const images = [
     title: "Vinyl garden window",
     img: img25,
   },
-  {
-    id: uuid(),
-    title: "Marvin wood clad windows",
-    img: img30,
-  },
-  {
-    id: uuid(),
-    title: "Marvin wood clad windows 2",
-    img: img31,
-  },
-  {
-    id: uuid(),
-    title: "Marvin wood clad windows",
-    img: img30,
-  },
-  {
-    id: uuid(),
-    title: "Marvin wood clad windows 2",
-    img: img31,
-  },
-  // {
-  //   id: uuid(),
-  //   title: "New construction installation",
-  //   img: img32,
-  // },
-  // {
-  //   id: uuid(),
-  //   title: "New construction installation 2",
-  //   img: img33,
-  // },
-  {
-    id: uuid(),
-    title: "New construction installation + stucco work",
-    img: img34,
-  },
-  {
-    id: uuid(),
-    title: "New construction installation + stucco work 2",
-    img: img35,
-  },
-  {
-    id: uuid(),
-    title: "New construction installation + stucco work 3",
-    img: img36,
-  },
-  {
-    id: uuid(),
-    title: "Retrofit installation. Before and after installation",
-    img: img37,
-  },
-  {
-    id: uuid(),
-    title: "Entry fibreglass door",
-    img: img26,
-  },
-  {
-    id: uuid(),
-    title: "Entry fibreglass door 2",
-    img: img27,
-  },
-  {
-    id: uuid(),
-    title: "Entry fibreglass door 3",
-    img: img28,
-  },
-  {
-    id: uuid(),
-    title: "Entry fibreglass door 4",
-    img: img29,
-  },
-  {
-    id: uuid(),
-    title: "Provia fibreglass entry door 2",
-    img: img38,
-  },
-  {
-    id: uuid(),
-    title: "Sliding door. Before and after installation",
-    img: img39,
-  },
-  {
-    id: uuid(),
-    title: "Sliding door. Before and after installation 2",
-    img: img40,
-  },
-  {
-    id: uuid(),
-    title: "Simonton vinyl windows and fiberglass Therma Tru door",
-    img: img41,
-  },
-  {
-    id: uuid(),
-    title: "Simonton vinyl windows and fiberglass Therma Tru door 2",
-    img: img42,
-  },
-];
+//   {
+//     id: uuid(),
+//     title: "Marvin wood clad windows",
+//     img: img30,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Marvin wood clad windows 2",
+//     img: img31,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Marvin wood clad windows",
+//     img: img30,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Marvin wood clad windows 2",
+//     img: img31,
+//   },
+//   // {
+//   //   id: uuid(),
+//   //   title: "New construction installation",
+//   //   img: img32,
+//   // },
+//   // {
+//   //   id: uuid(),
+//   //   title: "New construction installation 2",
+//   //   img: img33,
+//   // },
+//   {
+//     id: uuid(),
+//     title: "New construction installation + stucco work",
+//     img: img34,
+//   },
+//   {
+//     id: uuid(),
+//     title: "New construction installation + stucco work 2",
+//     img: img35,
+//   },
+//   {
+//     id: uuid(),
+//     title: "New construction installation + stucco work 3",
+//     img: img36,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Retrofit installation. Before and after installation",
+//     img: img37,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Entry fibreglass door",
+//     img: img26,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Entry fibreglass door 2",
+//     img: img27,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Entry fibreglass door 3",
+//     img: img28,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Entry fibreglass door 4",
+//     img: img29,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Provia fibreglass entry door 2",
+//     img: img38,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Sliding door. Before and after installation",
+//     img: img39,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Sliding door. Before and after installation 2",
+//     img: img40,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Simonton vinyl windows and fiberglass Therma Tru door",
+//     img: img41,
+//   },
+//   {
+//     id: uuid(),
+//     title: "Simonton vinyl windows and fiberglass Therma Tru door 2",
+//     img: img42,
+//   },
+// ];
