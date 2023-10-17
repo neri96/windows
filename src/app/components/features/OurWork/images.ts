@@ -174,99 +174,99 @@ export const images = [
     title: "Vinyl garden window",
     img: img25,
   },
-//   {
-//     id: uuid(),
-//     title: "Marvin wood clad windows",
-//     img: img30,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Marvin wood clad windows 2",
-//     img: img31,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Marvin wood clad windows",
-//     img: img30,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Marvin wood clad windows 2",
-//     img: img31,
-//   },
-//   // {
-//   //   id: uuid(),
-//   //   title: "New construction installation",
-//   //   img: img32,
-//   // },
-//   // {
-//   //   id: uuid(),
-//   //   title: "New construction installation 2",
-//   //   img: img33,
-//   // },
-//   {
-//     id: uuid(),
-//     title: "New construction installation + stucco work",
-//     img: img34,
-//   },
-//   {
-//     id: uuid(),
-//     title: "New construction installation + stucco work 2",
-//     img: img35,
-//   },
-//   {
-//     id: uuid(),
-//     title: "New construction installation + stucco work 3",
-//     img: img36,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Retrofit installation. Before and after installation",
-//     img: img37,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Entry fibreglass door",
-//     img: img26,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Entry fibreglass door 2",
-//     img: img27,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Entry fibreglass door 3",
-//     img: img28,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Entry fibreglass door 4",
-//     img: img29,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Provia fibreglass entry door 2",
-//     img: img38,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Sliding door. Before and after installation",
-//     img: img39,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Sliding door. Before and after installation 2",
-//     img: img40,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Simonton vinyl windows and fiberglass Therma Tru door",
-//     img: img41,
-//   },
-//   {
-//     id: uuid(),
-//     title: "Simonton vinyl windows and fiberglass Therma Tru door 2",
-//     img: img42,
-//   },
-// ];
+  //   {
+  //     id: uuid(),
+  //     title: "Marvin wood clad windows",
+  //     img: img30,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Marvin wood clad windows 2",
+  //     img: img31,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Marvin wood clad windows",
+  //     img: img30,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Marvin wood clad windows 2",
+  //     img: img31,
+  //   },
+  //   // {
+  //   //   id: uuid(),
+  //   //   title: "New construction installation",
+  //   //   img: img32,
+  //   // },
+  //   // {
+  //   //   id: uuid(),
+  //   //   title: "New construction installation 2",
+  //   //   img: img33,
+  //   // },
+  //   {
+  //     id: uuid(),
+  //     title: "New construction installation + stucco work",
+  //     img: img34,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "New construction installation + stucco work 2",
+  //     img: img35,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "New construction installation + stucco work 3",
+  //     img: img36,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Retrofit installation. Before and after installation",
+  //     img: img37,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Entry fibreglass door",
+  //     img: img26,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Entry fibreglass door 2",
+  //     img: img27,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Entry fibreglass door 3",
+  //     img: img28,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Entry fibreglass door 4",
+  //     img: img29,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Provia fibreglass entry door 2",
+  //     img: img38,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Sliding door. Before and after installation",
+  //     img: img39,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Sliding door. Before and after installation 2",
+  //     img: img40,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Simonton vinyl windows and fiberglass Therma Tru door",
+  //     img: img41,
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: "Simonton vinyl windows and fiberglass Therma Tru door 2",
+  //     img: img42,
+  //   },
+];
