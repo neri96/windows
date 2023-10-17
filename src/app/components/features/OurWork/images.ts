@@ -18,11 +18,11 @@ export const images = [
     title: "Marvin windows installation",
     img: img1,
   },
-  {
-    id: uuid(),
-    title: "Provia fibreglass entry door",
-    img: img2,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "Provia fibreglass entry door",
+  //   img: img2,
+  // },
   {
     id: uuid(),
     title: "Aluminium windows",
@@ -49,11 +49,11 @@ export const images = [
   //   title: "Door new construction installation, exterior finish redwood",
   //   img: img9,
   // },
-  {
-    id: uuid(),
-    title: "Bay window",
-    img: img11,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "Bay window",
+  //   img: img11,
+  // },
   {
     id: uuid(),
     title: "Bay window 2",
