@@ -6,7 +6,7 @@ import img3 from "@/app/assets/images/gallery/img3.jpg";
 import img4 from "@/app/assets/images/gallery/img4.jpg";
 import img5 from "@/app/assets/images/gallery/img5.jpg";
 // import img6 from "@/app/assets/images/gallery/img6.jpg";
-import img7 from "@/app/assets/images/gallery/img7.jpg";
+// import img7 from "@/app/assets/images/gallery/img7.jpg";
 // import img8 from "@/app/assets/images/gallery/img8.jpg";
 import img9 from "@/app/assets/images/gallery/img9.jpg";
 import img10 from "@/app/assets/images/gallery/img10.webp";
@@ -16,32 +16,32 @@ import img13 from "@/app/assets/images/gallery/img13.jpg";
 import img14 from "@/app/assets/images/gallery/img14.jpg";
 // import img15 from "@/app/assets/images/gallery/img15.jpg";
 import img16 from "@/app/assets/images/gallery/img16.webp";
-import img17 from "@/app/assets/images/gallery/img17.jpg";
-import img18 from "@/app/assets/images/gallery/img18.jpg";
-import img19 from "@/app/assets/images/gallery/img19.jpg";
+// import img17 from "@/app/assets/images/gallery/img17.jpg";
+// import img18 from "@/app/assets/images/gallery/img18.jpg";
+// import img19 from "@/app/assets/images/gallery/img19.jpg";
 // import img20 from "@/app/assets/images/gallery/img20.jpg";
 import img21 from "@/app/assets/images/gallery/img21.webp";
 import img22 from "@/app/assets/images/gallery/img22.jpg";
 // import img23 from "@/app/assets/images/gallery/img23.jpg";
-import img24 from "@/app/assets/images/gallery/img24.jpg";
-import img25 from "@/app/assets/images/gallery/img25.jpg";
-import img26 from "@/app/assets/images/gallery/img26.jpg";
-import img27 from "@/app/assets/images/gallery/img27.png";
+// import img24 from "@/app/assets/images/gallery/img24.jpg";
+// import img25 from "@/app/assets/images/gallery/img25.jpg";
+// import img26 from "@/app/assets/images/gallery/img26.jpg";
+// import img27 from "@/app/assets/images/gallery/img27.png";
 // import img28 from "@/app/assets/images/gallery/img28.png";
-import img29 from "@/app/assets/images/gallery/img29.jpg";
-import img30 from "@/app/assets/images/gallery/img30.jpg";
-import img31 from "@/app/assets/images/gallery/img31.jpg";
+// import img29 from "@/app/assets/images/gallery/img29.jpg";
+// import img30 from "@/app/assets/images/gallery/img30.jpg";
+// import img31 from "@/app/assets/images/gallery/img31.jpg";
 // import img32 from "@/app/assets/images/gallery/img32.jpg";
 // import img33 from "@/app/assets/images/gallery/img33.jpg";
 import img34 from "@/app/assets/images/gallery/img34.jpg";
 import img35 from "@/app/assets/images/gallery/img35.jpg";
 // import img36 from "@/app/assets/images/gallery/img36.jpg";
-import img37 from "@/app/assets/images/gallery/img37.webp";
-import img38 from "@/app/assets/images/gallery/img38.jpg";
-import img39 from "@/app/assets/images/gallery/img39.webp";
-import img40 from "@/app/assets/images/gallery/img40.webp";
+// import img37 from "@/app/assets/images/gallery/img37.webp";
+// import img38 from "@/app/assets/images/gallery/img38.jpg";
+// import img39 from "@/app/assets/images/gallery/img39.webp";
+// import img40 from "@/app/assets/images/gallery/img40.webp";
 // import img41 from "@/app/assets/images/gallery/img41.jpg";
-import img42 from "@/app/assets/images/gallery/img42.jpg";
+// import img42 from "@/app/assets/images/gallery/img42.jpg";
 
 export const images = [
   {
@@ -74,11 +74,11 @@ export const images = [
   //   title: "Aluminium windows and doors 2",
   //   img: img6,
   // },
-  {
-    id: uuid(),
-    title: "Anlin vinyl windows and patio doors",
-    img: img7,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "Anlin vinyl windows and patio doors",
+  //   img: img7,
+  // },
   // {
   //   id: uuid(),
   //   title: "Bay window",
@@ -144,21 +144,21 @@ export const images = [
   //   title: "Milgard single hung windows installed 2",
   //   img: img23,
   // },
-  {
-    id: uuid(),
-    title: "Marvin windows new construction installation",
-    img: img17,
-  },
-  {
-    id: uuid(),
-    title: "Marvin windows new construction installation 2",
-    img: img18,
-  },
-  {
-    id: uuid(),
-    title: "Marvin windows new construction installation 3",
-    img: img19,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "Marvin windows new construction installation",
+  //   img: img17,
+  // },
+  // {
+  //   id: uuid(),
+  //   title: "Marvin windows new construction installation 2",
+  //   img: img18,
+  // },
+  // {
+  //   id: uuid(),
+  //   title: "Marvin windows new construction installation 3",
+  //   img: img19,
+  // },
   // {
   //   id: uuid(),
   //   title: "Marvin windows new construction installation 4",
