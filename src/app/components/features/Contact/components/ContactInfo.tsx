@@ -42,7 +42,7 @@ const ContactInfo = () => {
             </div>
           </div>
           <div className={styles.contactInfo__footer}>
-            <Image priority={true} src={YelpIcon} alt="Email" />
+            <Image priority={true} src={YelpIcon} alt="Yelp" />
             <h2>Find us on Yelp</h2>
           </div>
         </div>
