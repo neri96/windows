@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { HomeContainer } from "./components/features/Home";
 
+import PageLayout from "./components/ui/PageLayout";
+
 import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
@@ -13,11 +15,11 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <div className={styles.homeContent}>
+    <PageLayout>
+      <div className={styles.home}>
         <HomeContainer />
       </div>
-    </div>
+    </PageLayout>
   );
 };
 

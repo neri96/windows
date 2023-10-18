@@ -1,7 +1,7 @@
 @import "../../../../sass/variables.scss";
 
 .materials {
-  min-height: calc(100% - 180px);
+  min-height: calc(100vh - 180px);
   width: 100%;
   color: $text-color;
 }

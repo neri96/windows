@@ -6,6 +6,8 @@
   display: flex;
   background-color: $layout-color;
   color: $text-color;
+  z-index: 1000;
+  position: relative;
 }
 
 .mainFooterSection {

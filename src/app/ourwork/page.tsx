@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { OurWorkGallery } from "../components/features/OurWork";
 
+import PageLayout from "../components/ui/PageLayout";
+
 export const metadata: Metadata = {
   title: "Our Work",
   alternates: {
@@ -11,9 +13,9 @@ export const metadata: Metadata = {
 
 const OurWork = () => {
   return (
-    <div>
+    <PageLayout>
       <OurWorkGallery />
-    </div>
+    </PageLayout>
   );
 };
 
