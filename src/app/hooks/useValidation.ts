@@ -10,7 +10,7 @@ const useValidation = (requiredFields: string[]) => {
           errorTemp.name = "Name is too short, at 2 characters required";
         } else if (value[key].length > 20) {
           errorTemp.name = "Name is too long, 20 characters maximum";
-        } else if (!/(^$)|(^[A-Za-z]+$)/.test(value[key])) {
+        } else if (!/(^$)|(^[  A-Za-z]+$)/.test(value[key])) {
           errorTemp.name = "Invalid name";
         }
       }
