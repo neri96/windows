@@ -13,20 +13,28 @@ const Select = ({
   defaultOption,
   chosenOption,
   list,
+  error,
   handleClick,
+  clearError,
 }: {
   label?: string;
   defaultOption?: string;
   chosenOption: string;
   list: string[];
+  error?: string;
   handleClick?: (arg1: string) => void;
+  clearError?: () => void;
 }) => {
   const [listOpen, setListOpen] = useState<boolean>(false);
 
-  const chosenOptionCap =
-    chosenOption.charAt(0).toUpperCase() + chosenOption.slice(1);
+  const chosenOptionCap = chosenOption
+    ? chosenOption.charAt(0).toUpperCase() + chosenOption.slice(1)
+    : null;
 
-  const toggleList = () => setListOpen((list) => !list);
+  const toggleList = () => {
+    clearError && clearError();
+    setListOpen((list) => !list);
+  };
 
   const handleOption = (option: string) => {
     handleClick && handleClick(option);
@@ -36,6 +44,7 @@ const Select = ({
   return (
     <div className={`${styles.select} ${listOpen ? styles.select__open : ""}`}>
       {label ? <span className={styles.select__label}>{label}</span> : null}
+      {error ? <span style={{ color: "red" }}>{error}</span> : null}
       <div className={styles.select__field} onClick={toggleList}>
         <span className={styles.select__chosenOption}>
           {chosenOptionCap || defaultOption}

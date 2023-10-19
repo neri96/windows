@@ -43,7 +43,7 @@ const ContactForm = () => {
 
   const [successModal, setSuccessModal] = useState<boolean>(false);
 
-  const { validate } = useValidation(["name", "email", "phone"]);
+  const { validate } = useValidation(["name", "email", "phone", "details"]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -145,6 +145,8 @@ const ContactForm = () => {
               label="Service"
               defaultOption="Select a service"
               chosenOption={value.service}
+              error={error.service}
+              clearError={() => setError({ ...error, service: "" })}
               list={[
                 "door installation",
                 "door replacement",
@@ -156,7 +158,6 @@ const ContactForm = () => {
             <Input
               label="Details"
               name="details"
-              placeholder="Optional"
               isTextarea={true}
               value={value.details}
               error={error.details}

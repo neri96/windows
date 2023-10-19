@@ -37,7 +37,14 @@ const useValidation = (requiredFields: string[]) => {
       if (key === "details") {
         if (value[key] && value[key].length > 3000) {
           errorTemp.details = "Maximum amount of characters is 3000";
+        } else if (value[key] && value[key].length < 150) {
+          errorTemp.details = "Minimum amount of characters is 150";
         }
+      }
+      console.log(key, value[key]);
+
+      if (key === "service" && !value[key]) {
+        errorTemp.service = "Choose a service";
       }
 
       if (!value[key] && requiredFields.includes(key)) {
