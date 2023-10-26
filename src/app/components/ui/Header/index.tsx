@@ -12,7 +12,7 @@ import classnames from "classnames";
 
 import HamburgerMenu from "../HamburgerMenu";
 
-import logo from "../../../assets/images/main-logo.png";
+import logo from "../../../assets/images/main-logo2.png";
 
 import styles from "./styles.module.scss";
 
