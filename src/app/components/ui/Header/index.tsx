@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -9,6 +9,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classnames from "classnames";
+
+import useCurrentPath from "@/app/hooks/useCurrentPath";
 
 import HamburgerMenu from "../HamburgerMenu";
 
@@ -21,10 +23,9 @@ import { navigationList } from "@/app/globalConst";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const pathname = usePathname();
-  const currentPath = pathname.replace(/^\/|\/$/g, "");
-
   const router = useRouter();
+
+  const currentPath = useCurrentPath();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -37,7 +38,10 @@ const Header = () => {
 
   return (
     <header
-      className={classnames(styles.mainHeader, { [styles.solid]: currentPath })}
+      className={classnames(styles.mainHeader, {
+        [styles.solid]: currentPath,
+        [styles.fixed]: currentPath === "ourwork",
+      })}
     >
       <div
         onClick={() => router.push("/", { scroll: false })}

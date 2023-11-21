@@ -2,12 +2,18 @@
 
 .mainFooter {
   height: 90px;
+  width: 100%;
   background-color: red;
   display: flex;
   background-color: $layout-color;
   color: $text-color;
   z-index: 1000;
   position: relative;
+  bottom: 0;
+  &.fixed {
+    position: fixed;
+    background-color: $layout-color;
+  }
 }
 
 .mainFooterSection {

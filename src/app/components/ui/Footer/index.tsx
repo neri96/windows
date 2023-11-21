@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 import styles from "./styles.module.scss";
@@ -7,14 +9,22 @@ import { navigationList } from "@/app/globalConst";
 import Image from "next/image";
 import classnames from "classnames";
 
+import useCurrentPath from "@/app/hooks/useCurrentPath";
+
 import ArrowIcon from "../../../assets/images/icons/arrow.svg";
 import FbIcon from "../../../assets/images/icons/facebook.svg";
 // import IgIcon from "../../../assets/images/icons/instagram.svg";
 import YelpIcon from "../../../assets/images/icons/yelp.svg";
 
 const Footer = () => {
+  const currentPath = useCurrentPath();
+
   return (
-    <footer className={styles.mainFooter}>
+    <footer
+      className={classnames(styles.mainFooter, {
+        [styles.fixed]: currentPath === "ourwork",
+      })}
+    >
       <div
         className={classnames(styles.mainFooterSection, styles.mainFooterNav)}
       >
