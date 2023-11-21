@@ -9,6 +9,7 @@ import OurWorkCarousel from "./OurWorkCarousel";
 import { images } from "../images";
 
 import styles from "./OurWorkGallery.module.scss";
+import { AnimatePresence } from "framer-motion";
 
 export const OurWorkGallery = () => {
   const [index, setIndex] = useState<number>(0);
@@ -18,6 +19,7 @@ export const OurWorkGallery = () => {
     <div className={styles.ourWorkGallery}>
       <OurWorkCarousel
         index={index}
+        images={images}
         carouselOpen={carouselOpen}
         setIndex={setIndex}
         setCarouselOpen={setCarouselOpen}
@@ -42,6 +44,8 @@ export const OurWorkGallery = () => {
                 // placeholder="blur"
                 src={img}
                 alt={title}
+                layout="responsive"
+                loading="lazy"
               />
             );
           }

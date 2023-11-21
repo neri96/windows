@@ -5,14 +5,16 @@ import classnames from "classnames";
 
 import Image from "next/image";
 
-import { images } from "../images";
+// import { images } from "../images";
 
 import styles from "./OurWorkPagination.module.scss";
 
 const OurWorkPagination = ({
   currentIndex,
   setIndex,
+  images,
 }: {
+  images: any;
   currentIndex: number;
   setIndex: Dispatch<SetStateAction<number>>;
 }) => {
@@ -66,9 +68,10 @@ const OurWorkPagination = ({
                   [styles.ourWorkGallery__pagination__currentImg]:
                     i === currentIndex,
                 })}
-                key={uuid()}
-                priority={true}
+                key={i}
                 src={img}
+                layout="responsive"
+                loading="lazy"
                 alt="Picture of the author"
               />
             );
